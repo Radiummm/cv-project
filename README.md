@@ -86,10 +86,19 @@ cd student_model
 python train.py
 ```
 
-
-
 ## 📊 性能数据 (Benchmark)
 
   * **模型大小:** 10.5 MB (相比教师模型压缩 50 倍)
   * **推理速度:** \~30 ms/img (On Tesla T4)
   * **FPS:** 33+ (实现实时视频流处理)
+Acknowledgements & References (致谢与引用)
+
+## 本项目深受以下优秀开源工作的启发，特此致谢：
+
+1. Teacher Model Architecture: Based on AdaIN (Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization).
+
+* Paper: Huang et al., ICCV 2017
+
+* Code Reference: pytorch-AdaIN (Used as our teacher baseline).
+
+2. Knowledge Distillation: Our distillation loss design refers to the concepts from recent lightweight style transfer research.
