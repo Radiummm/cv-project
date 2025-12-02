@@ -1,0 +1,6 @@
+data/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+teacher_model/models/
+student_model/checkpoints/student_iter_*
